@@ -1,0 +1,126 @@
+.banner {
+	margin-top: 0;
+	background: var(--c-bg2);
+	overflow: hidden;
+
+	&__inner {
+		display: flex;
+		margin-right: calc(-50vw + 700px);
+	}
+
+	&__left {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+		padding: 30px 200px 30px 0;
+		box-sizing: border-box;
+		margin-right: 30px;
+
+		position: relative;
+
+		@media (max-width: 1500px) {
+			padding-right: 100px
+		}
+
+		.button {
+			margin-top: 65px;
+		}
+	}
+
+	&__right {
+		width: 50%;
+
+		img {
+			height: 100%;
+			display: block;
+		}
+	}
+
+	&__in {
+		max-width: 515px;
+		width: 100%;
+	}
+
+	&__link {
+		&-item {
+			margin-bottom: 12px;
+			display: inline-block;
+			margin-right: 8px;
+			padding: 10px 30px;
+
+			box-sizing: border-box;
+			font-weight: 600;
+			color: var(--text-color);
+			border: 1px solid var(--text-color);
+			border-radius: 100px;
+
+			&:hover {
+				background: var(--text-color);
+				color: var(--c-white);
+			}
+		}
+	}
+
+	&__video {
+		width: 200px;
+		height: 200px;
+
+		position: absolute;
+		top: 60px;
+		right: -25px;
+		z-index: 1;
+
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuNjcxODggNEwyNS4zMzg1IDE2TDYuNjcxODggMjhWNFoiIGZpbGw9IiMxMDU3MjAiIHN0cm9rZT0iIzEwNTcyMCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: 0.3s;
+
+		@media (max-width: 1500px) {
+			right: -105px;
+		}
+
+		img {
+			display: block;
+
+			animation: 7s linear 0s normal none infinite running rot;
+			-webkit-animation: 7s linear 0s normal none infinite running rot;
+		}
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
+
+
+@keyframes rot {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes rot {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

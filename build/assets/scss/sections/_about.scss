@@ -1,0 +1,77 @@
+.about {
+	&__inner {
+
+	}
+
+	&__pay {
+		display: flex;
+		margin: 0 -10px;
+	}
+
+	&__cell {
+		width: 33.333%;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
+	&__item {
+		padding: 18px 25px;
+
+		box-sizing: border-box;
+		border: 1px solid var(--c-bg3);
+		border-radius: 12px;
+	}
+
+	&__tt {
+		display: flex;
+		align-items: center;
+
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 120%;
+
+		img {
+			margin-right: 13px;
+			flex-shrink: 0;
+		}
+	}
+
+	&__tx {
+		margin-top: 13px;
+	}
+
+	&__descrip {
+		display: flex;
+		margin-top: 105px;
+		padding: 27px 0 40px;
+
+		box-sizing: border-box;
+		border-top: 2px solid var(--text-color);
+		border-bottom: 2px solid var(--text-color);
+	}
+
+	&__title {
+		padding: 20px 0;
+		width: 40%;
+		box-sizing: border-box;
+
+		h2 {
+			margin-bottom: 0;
+		}
+	}
+
+	&__text {
+		width: 60%;
+		padding-left: 30px;
+
+		box-sizing: border-box;
+
+		p {
+			margin-bottom: 0;
+
+			& + p {
+				margin-top: 30px;
+			}
+		}
+	}
+}

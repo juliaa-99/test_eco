@@ -1,0 +1,51 @@
+// FONTS
+$font: 'Open Sans', sans-serif;
+// $font2: 'Roboto', sans-serif;
+
+// PATH TO IMAGES
+$imgpath : "../img";
+
+// responsive breackpoints
+$w_mob_s:  768px;
+$w_mob:    991px;
+$w_tab:    1200px;
+$w_laptop: 1500px;
+
+$w_min:    320px;
+$w_max:    2560px;
+
+
+html {
+
+    --doc-padding: 40px;
+    --doc-font-size: 16px;
+
+    --cols      : 12;
+    --gutter    : 20px;
+    --column    : calc( ( 100% - ( var(--gutter) * (var(--cols) - 1) ) ) / 12 );
+    --w-content : calc(1420px + var(--doc-padding)*2);
+
+
+    @media (max-width: $w_mob) {
+        --doc-padding: 20px;
+    }
+
+
+    // colors of project
+
+    --c-white       : #ffffff;
+    --c-black       : #000000;
+
+    --c-black-brand: #1F1F1F;
+    --c-bg: #FFF7F3;
+    --c-bg2: #F3F7F4;
+    --c-bg3: #E8E8E8;
+    --c-bg4: #C6D7CA;
+
+    --text-color: #F95707;
+    --text-green: #105720;
+    --text-gray: #4C4C4C;
+
+    --gray: #E8E8E8;
+
+}

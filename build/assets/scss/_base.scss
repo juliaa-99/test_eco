@@ -1,0 +1,71 @@
+body, html {
+	background: var(--c-white);
+	color: var(--c-black-brand);
+
+	font-family: $font;
+	font-size: var(--doc-font-size);
+	line-height: 1.4;
+	font-weight: 400;
+
+	margin: 0 auto;
+}
+
+body {
+	font-size: var(--doc-font-size);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+h1, .title-xxl {
+	font-size: 48px;
+	line-height: 130%;
+	font-weight: 600;
+	margin: 0 0 55px;
+
+	span {
+		color: var(--text-green);
+	}
+}
+
+h2, .title-xl {
+	font-size: 42px;
+	line-height: 130%;
+	font-weight: 600;
+	margin: 0 0 35px;
+}
+
+h3, .title-l {
+	font-size: 26px;
+	line-height: 1.3;
+	font-weight: 500;
+	margin: 1em 0;
+}
+
+h4, .title-m {
+	font-size: 21px;
+	line-height: 1.3;
+	font-weight: 500;
+	margin: 1em 0;
+}
+
+h5, .title-s {
+	font-size: 18px;
+	line-height: 1.3;
+	font-weight: 500;
+	margin: 1em 0;
+}
+
+a {
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+ul, ol {
+	margin: 1em 0;
+	padding: 0;
+	list-style: none;
+
+}

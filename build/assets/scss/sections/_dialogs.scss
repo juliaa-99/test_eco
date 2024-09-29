@@ -1,0 +1,111 @@
+.dialogs {
+	position: fixed;
+	display: none;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	overflow-y: auto;
+	-webkit-overflow-scrolling:touch;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	.close-bg {
+		position: fixed;
+		z-index: 51;
+		width: 100%;
+		height: 100%;
+		.ico {
+			display: block;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			fill: var(--c-white);
+			right: 20px;
+			top: 20px;
+			cursor: pointer;
+		}
+	}
+	.flex {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    min-height: 100%;
+	    width: 100%;
+	    padding: 30px 0;
+	    box-sizing: border-box;
+	}
+	.close {
+		display: block;
+		position: absolute;
+		z-index: 53;
+		width: 20px;
+		height: 20px;
+		fill: var(--c-black);
+		right: 30px;
+		top: 30px;
+		cursor: pointer;
+		transition: all ease-in-out 0.2s;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+	.popup {
+		display: none;
+		opacity: 0;
+		margin: 0 auto;
+		position: relative;
+		z-index: 52;
+		width: 100%;
+		max-width: 1200px;
+		border: none;
+		padding: 40px;
+		box-sizing: border-box;
+		transform: translate3d(0,-30px,0) scale(0.9);
+		transition: all ease-in-out 0.3s;
+		background: var(--c-white);
+		color: var(--c-black);
+		&.active {
+			opacity: 1;
+			transform: translate3d(0,0,0) scale(1);
+		}
+	}
+	.thanks-popup {
+		background: rgba(0,0,0,0.65);
+		position: fixed;
+		z-index: 102;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: none;
+		.close {
+			z-index: 103;
+		}
+		.close-bg {
+			z-index: -1;
+		}
+		.popup {
+			opacity: 1 !important;
+			display: block !important;
+			background-color: var(--c-white);
+			text-align: center;
+		}
+	}
+}
+
+// TESTING of POPUP LAYOUT //
+// body {
+// 	overflow: hidden;
+// }
+// .dialogs {
+// 	display: block !important;
+// 	opacity: 1 !important;
+// 	.popup {
+// 		opacity: 1 !important;
+// 		transform: translate3d(0,0,0);
+// 		display: block !important;
+// 		margin: 20px auto;
+// 	}
+// }
+// END of TESTING POPUP LAYOUT //

@@ -1,0 +1,21 @@
+.container {
+	max-width: 1335px;
+	min-width: 320px;
+	margin: 0 auto;
+    position: relative;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+section, .section, article, header, footer {
+	width: 100%;
+	clear: both;
+	position: relative;
+	z-index: 2;
+}
+section, .section, article {
+	margin-top: 70px;
+
+	@media (max-width: $w_mob) {
+		margin-top: 40px;
+	}
+}
